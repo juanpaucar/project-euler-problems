@@ -4,6 +4,7 @@
 #By considering the terms in the Fibonacci sequence whose values do not exceed four million,
 # find the sum of the even-valued terms.
 
+import time
 __author__ = 'Juan Paucar'
 
 
@@ -12,6 +13,7 @@ a=0
 b=1
 c=0
 
+start  = time.clock()
 while b <= 4000000:
     c=a+b
     a=b
@@ -20,3 +22,5 @@ while b <= 4000000:
         sum+=b
 else:
     print sum
+stop = time.clock()
+print "Elapsed time: %s ms" %(str((stop-start)*1000))

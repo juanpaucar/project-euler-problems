@@ -14,4 +14,4 @@ while x **2 < number:
     x +=  1
 stop = time.clock()
 print number
-print "Elapsed time: %s secs" % (str(stop-start))
+print "Elapsed time: %s ms" %(str((stop-start)*1000))
