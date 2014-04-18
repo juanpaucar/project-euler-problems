@@ -5,13 +5,13 @@ import time
 
 __author__ = 'Juan Paucar'
 
-x = 2
+x = 3
 number = 600851475143
 start = time.clock()
-while x **2 < number:
-    while number % x == 0:
+while x **2 < number: #we know it must be less or equal to square root of 600851475143
+    while number % x == 0: #just reducing the number
         number /= x
-    x +=  1
+    x +=  2 #just odds
 stop = time.clock()
 print number
 print "Elapsed time: %s ms" %(str((stop-start)*1000))
