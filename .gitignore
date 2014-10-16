@@ -16,6 +16,11 @@ local.properties
 .settings/
 .loadpath
 
+##############
+#pycharm
+##########
+.idea
+
 # External tool builders
 .externalToolBuilders/
 
